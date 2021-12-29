@@ -1,0 +1,115 @@
+//Buttons
+.buttons-wrapper {
+    width: 90%;
+    max-width: 600px;
+    margin: 1rem auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.blue-btn {
+    display: block;
+    width: 90%;
+    max-width: 350px;
+    padding: .375rem .75rem;
+    margin: auto;
+    color: white;
+    background-color: $bg-blue;
+    border: 1px inset $bg-blue;
+    border-radius: 1.25rem;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $bg-lightBlue;
+        border: 1px inset black;
+        color: black;
+    }
+}
+.btn-small {
+    width: 120px !important;
+    margin: auto 0 !important;
+}
+.search-button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent !important;
+    transition: all 150ms ease-in-out;
+
+    svg{
+        width: 90%;
+        height: auto;
+        margin: auto;
+
+        path {
+            fill: $bg-blue !important;
+        }
+    }
+
+    &:hover {
+
+        svg {
+            path {
+                fill: $bg-lightBlue !important;
+            }
+        }
+    }
+}
+.icon-btn {
+    width: 30px;
+    height: 30px;
+    padding: .375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: none;
+    border-radius: 50%;
+    background-color: $bg-blue;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+
+    a {
+        display: inherit;
+    }
+    svg{
+        width: 100%;
+        height: auto;
+
+        path {
+            fill: $bg-lightBlue;
+        }
+    }
+
+    &:hover {
+        background-color: $bg-lightBlue;
+
+        svg {
+            path {
+                fill: $bg-blue;
+            }
+        }
+    }
+}
+// Box and borders
+.box-shadow {
+    border: 1px inset $bg-lightBlue;
+    box-shadow: $bg-blue 4px 4px 2px;
+}
+//Sizing
+.absolute-mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.max-650 {
+    max-width: 650px !important;
+    margin: auto !important;
+}
+.max-100-input {
+    max-width: 100% !important;
+}
+

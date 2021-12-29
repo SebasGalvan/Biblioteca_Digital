@@ -1,0 +1,59 @@
+.navbar {
+    background-color: $bg-blue !important;
+
+    .container {
+        color: $bg-lightBlue;
+        @media screen and (min-width: 992px) {
+            .navbar-toggler {
+                visibility: hidden;
+            }
+        }
+
+        button {
+            width: 25px;
+            height: 25px;
+            margin: 0;
+            padding: 0;
+            border: none !important;
+            box-shadow: none !important;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+        }
+        a {
+            color: white;
+            transition: all 150ms ease-in-out;
+            &:hover {
+                color: $bg-lightBlue !important;
+            }
+        }
+    }
+    .search-form {
+        position: relative;
+    }
+    .navbar-nav {
+        align-items: flex-end;
+    }
+    .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    }
+    .dropdown-menu {
+        background-color: $bg-blue !important;
+        left: -80%;
+        border: none;
+        text-align: right;
+
+        .dropdown-item {
+            &:hover {
+                color: black !important;
+            }
+        }
+    }
+
+}
